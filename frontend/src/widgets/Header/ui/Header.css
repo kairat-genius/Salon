@@ -1,0 +1,25 @@
+header {
+    background: #ffffff;
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.logo {
+    width: 304px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.header-wrapper {
+    gap: 80px;
+}
+
+.header-actions {
+    gap: 40px;
+}
+
+

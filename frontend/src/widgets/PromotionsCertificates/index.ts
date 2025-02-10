@@ -1,0 +1,1 @@
+export {PromotionsCertificates} from "./ui/PromotionsCertificates"
