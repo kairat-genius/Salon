@@ -1,0 +1,57 @@
+/* roboto */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/roboto/regular-400.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/roboto/medium-500.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/roboto/semi-bold-600.woff2') format('woff2');
+}
+
+/* montserrat */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/montserrat/semi-bold-600.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/montserrat/bold-700.woff2') format('woff2');
+}
+
+/* cormorant-garamond */
+@font-face {
+    font-display: swap;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/cormorant-garamond/semi-bold-600.woff2') format('woff2');
+}
+
+/*@font-face {*/
+/*    font-display: swap;*/
+/*    font-family: 'Sail';*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    src: url('/fonts/sail/CitadelScriptStd.woff2') format('otf');*/
+/*}*/
