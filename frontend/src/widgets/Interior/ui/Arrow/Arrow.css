@@ -1,0 +1,24 @@
+
+.swiper-button-next:after,  .swiper-button-prev:after{
+    display: none;
+}
+
+.swiper-button-prev.arrow  .icon-arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+margin-top: 0;
+
+}
+.icon-arrow {
+    width: 80px;
+    height: 80px;
+}

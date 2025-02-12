@@ -1,0 +1,26 @@
+
+.title-description {
+    background: linear-gradient(to left, #3e1e26, #3e1e26);
+    border-radius: 12px;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ffffff;
+    max-height: 375px;
+}
+
+
+
+.description {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    width: 831px;
+}

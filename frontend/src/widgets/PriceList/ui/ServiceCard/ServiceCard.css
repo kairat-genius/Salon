@@ -1,0 +1,30 @@
+
+.service-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.service-card__image {
+    border-radius: 12px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+.service-card__content {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    gap: 40px;
+}
+
+.service-card__description {
+    font-size: 28px;
+    max-width: 728px;
+    line-height: 140%;
+}
+.service-card__price {
+    font-size: 36px;
+    line-height: 140%;
+}

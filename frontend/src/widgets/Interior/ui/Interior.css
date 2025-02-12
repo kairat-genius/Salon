@@ -1,0 +1,36 @@
+
+.interior {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1760px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.interior-list {
+    position: relative;
+    width: 1760px;
+}
+
+.swiper-slide {
+   width: 500px;
+    height: 500px;
+}
+
+.interior-img {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide-active .interior-img{
+    width: 574px;
+    height: 422px;
+}
+

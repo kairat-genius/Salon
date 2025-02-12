@@ -1,0 +1,44 @@
+table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+
+.service-pricing-header {
+    margin-bottom: 40px;
+}
+
+.service-pricing-header tr th{
+    color: #a1a1a1;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.service-title {
+    text-transform: uppercase;
+    text-align: left!important;
+}
+.service-pricing-body tr {
+    margin-bottom: 30px;
+}
+
+.service-pricing-body tr:last-child {
+    margin-bottom: 0;
+}
+
+
+.service-pricing-body tr td{
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 500;
+    text-align: center;
+}
+.service-pricing-body tr td:first-child {
+    text-align: left;
+}

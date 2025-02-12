@@ -1,0 +1,17 @@
+
+.employees {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    max-width: 1840px;
+}
+
+.employees__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: grab;
+}

@@ -1,0 +1,57 @@
+
+.promotions-certificates {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: 956px;
+    max-width: 1770px;
+    margin: 0 auto;
+}
+
+.promotions-content{
+    display: flex;
+    flex-direction: row;
+    gap: 66px;
+    position: relative;
+    align-items: center;
+}
+
+
+.promotions-images{
+    width: 711.56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.promotions-images .promotion-image {
+    border-radius: 12px;
+    transform-origin: 0 0;
+    transform: rotate(0.029deg) scale(1, 1);
+    object-fit: cover;
+}
+
+.promotions-images .img1 {
+    width: 360px;
+    height: 420px;
+}
+
+.promotions-images .img2 {
+    width: 300px;
+    height: 370px;
+}
+
+.certificates-content {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+}
+.certificate-image {
+    border-radius: 12px;
+    width: 593px;
+    height: 424px;
+    object-fit: cover;
+}
+

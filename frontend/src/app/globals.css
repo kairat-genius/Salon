@@ -1,5 +1,13 @@
 @import url('./fonts.css');
 
+:root {
+    --whire-backgraund-primary: #ffffff;
+    --stroke-grey: #b0b0b0;
+    --text-black: #000000;
+    --button-purple: #bf00bf;
+    --button-purple-active: #800080;
+}
+
 * {
     margin: 0;
     padding: 0;

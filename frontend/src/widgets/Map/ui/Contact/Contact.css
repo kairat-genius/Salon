@@ -1,0 +1,186 @@
+.frame-1597883387 {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
+.frame-1597883386 {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.frame-1597883385 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.frame-1597883384 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.image-2 {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    object-fit: cover;
+}
+._1905 {
+    color: #000000;
+    text-align: left;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 30px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-1597883383 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.frame-1597883379 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.div {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+._16-2 {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-1597883380 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+._9-00-21-00 {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-1597883381 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.pochta-gmail-com {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-1597883382 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+._7-968-601-20-20 {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-1 {
+    background: #782f61;
+    border-radius: 12px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.div2 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}

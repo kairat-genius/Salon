@@ -1,24 +1,28 @@
 import "./Banner.css"
 
 export const Banner = () => {
-  return (
-      <div
-          className="frame-9"
-          style={{backgroundImage: "url('/banner/background.png')",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat"}}
-      >
-        <div className="frame-12">
-          <div className="div">Студия красоты</div>
-          <div className="line-1"></div>
-          <div className="frame-1597883421">
-            <div className="mon">Mon</div>
-            <div className="plaisir">Plaisir</div>
-          </div>
+    return (
+        <div
+            className="banner"
+            style={{
+                backgroundImage: "url('/banner/background.png')",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat"
+            }}
+        >
+            <div className="banner-content">
+                <div className="banner-title-wrapper">
+                    <span className="banner-title">Студия красоты</span>
+                    <div className="title-divider"></div>
+                </div>
+                <div className="banner-logo">
+                    <span className="logo-text">Mon</span>
+                    <span className="logo-name">Plaisir</span>
+                </div>
+            </div>
+            <p className="banner-description">25 лет профессионально заботимся о Вашей красоте</p>
         </div>
-        <div className="_25">25 лет профессионально заботимся о Вашей красоте</div>
-      </div>
 
-  );
+    );
 };

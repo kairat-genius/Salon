@@ -1,0 +1,19 @@
+.title-price-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.title-price-list__decor {
+    background: #d4af37;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.title-price-list__text {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+}

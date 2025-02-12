@@ -1,0 +1,27 @@
+
+.price-list {
+    background: #3e1e26;
+    padding: 40px 0 100px ;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.price-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    gap: 40px;
+}
+
+.price-list__services {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+}
+

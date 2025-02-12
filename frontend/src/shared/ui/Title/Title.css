@@ -1,19 +1,7 @@
-
-.button-container {
-  background: #782f61;
-  border-radius: 12px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.button-text {
-  color: #ffffff;
+.block-title {
   text-align: left;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
   font-weight: 600;
+  align-self: stretch;
 }

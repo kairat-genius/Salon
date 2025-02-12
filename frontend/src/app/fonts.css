@@ -28,6 +28,14 @@
     font-display: swap;
     font-family: 'Montserrat';
     font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/montserrat/medium-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 600;
     src: url('/fonts/montserrat/semi-bold-600.woff2') format('woff2');
 }
@@ -39,19 +47,31 @@
     src: url('/fonts/montserrat/bold-700.woff2') format('woff2');
 }
 
+
 /* cormorant-garamond */
 @font-face {
     font-display: swap;
-    font-family: 'Cormorant Garamond';
+    font-family: 'CormorantGaramond';
     font-style: normal;
     font-weight: 600;
-    src: url('/fonts/cormorant-garamond/semi-bold-600.woff2') format('woff2');
+    src: url('/fonts/cormorant-garamond/Cormorantgaramondsemibold.woff2') format('woff2');
 }
 
-/*@font-face {*/
-/*    font-display: swap;*/
-/*    font-family: 'Sail';*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    src: url('/fonts/sail/CitadelScriptStd.woff2') format('otf');*/
-/*}*/
+
+/* citadel script */
+@font-face {
+    font-display: swap;
+    font-family: 'Citadel Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/citadel-script/regular-400.otf') format('opentype');
+}
+
+/* museomoderno */
+@font-face {
+    font-display: swap;
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/museomoderno/medium-500.woff2') format('woff2');
+}
