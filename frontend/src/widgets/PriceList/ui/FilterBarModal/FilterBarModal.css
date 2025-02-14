@@ -1,0 +1,124 @@
+
+
+.filter-bar-modal {
+    display: none;
+}
+
+.filter-item-modal {
+    border-style: solid;
+    border-color: var(--button-purple);
+    border-width: 1px;
+    padding: 10px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.filter-text-modal {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+
+.filter-item-modal.active {
+    background: var(--button-purple-active);
+    border-radius: 12px;
+    padding: 10px 64px;
+}
+
+.filter-item-modal.active .filter-text-modal {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+
+.filter-open-modal {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+
+.filter-modal {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 100;
+}
+
+.filter-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+
+.filter-bar-modal .title-price-list__text {
+    color: #000000;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.modal__image-logo {
+    width: 85px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.modal__close-icon {
+    width: 25px;
+    height: 25px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+
+.modal__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .filter-bar-modal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filter-item-modal.only {
+        max-width: 200px;
+
+    }
+}

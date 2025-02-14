@@ -5,3 +5,9 @@
   font-weight: 600;
   align-self: stretch;
 }
+
+@media (max-width: 768px) {
+  .block-title {
+    font-size: 20px;
+  }
+}

@@ -2,15 +2,7 @@ import "./Banner.css"
 
 export const Banner = () => {
     return (
-        <div
-            className="banner"
-            style={{
-                backgroundImage: "url('/banner/background.png')",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat"
-            }}
-        >
+        <div className="banner">
             <div className="banner-content">
                 <div className="banner-title-wrapper">
                     <span className="banner-title">Студия красоты</span>

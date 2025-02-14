@@ -12,3 +12,21 @@
 }
 
 
+@media (max-width: 1550px) {
+    .social {
+        gap: 10px;
+    }
+
+    .social_item {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    .social_item {
+        width: 25px;
+        height: 25px;
+    }
+
+}

@@ -13,5 +13,23 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    cursor: grab;
+}
+
+@media (max-width: 1800px) {
+    .employees {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .employees {
+        gap: 20px;
+        margin: 10px;
+        margin-bottom: 40px;
+    }
+
+    .employees .swiper-slide {
+        margin-right: 20px!important;
+    }
 }

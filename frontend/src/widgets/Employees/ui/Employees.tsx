@@ -3,12 +3,16 @@ import "./Employees.css"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
-
 import {FreeMode } from "swiper/modules";
-
 import {Title} from "@/shared/ui/Title";
 import {EmployeeCard} from "./EmployeeCard";
-export const Employees = () => {
+import {StaffType} from "@/interface";
+
+interface EmployeesProps {
+    staff: StaffType[];
+}
+
+export const Employees: React.FC<EmployeesProps> = ({ staff }) => {
   return (
       <div className="employees">
         <Title>Сотрудники</Title>
@@ -18,31 +22,13 @@ export const Employees = () => {
                 modules={[FreeMode]}
                 freeMode={true}
                 slidesPerView="auto"
+                grabCursor={true}
             >
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
+                {staff.map((data) => (
+                <SwiperSlide style={{ width: "auto" }} key={data.id}>
+                    <EmployeeCard employee={data}/>
                 </SwiperSlide>
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
-                </SwiperSlide>
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
-                </SwiperSlide>
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
-                </SwiperSlide>
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
-                </SwiperSlide>
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
-                </SwiperSlide>
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
-                </SwiperSlide>
-                <SwiperSlide style={{ width: "auto" }}>
-                    <EmployeeCard/>
-                </SwiperSlide>
+                ))}
             </Swiper>
         </div>
       </div>

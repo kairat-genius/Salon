@@ -8,11 +8,9 @@
     gap: 40px;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     color: #ffffff;
     max-height: 375px;
 }
-
 
 
 .description {
@@ -22,5 +20,17 @@
     line-height: 140%;
     font-weight: 400;
     position: relative;
-    width: 831px;
+}
+
+@media (max-width: 768px) {
+
+    .title-description {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
 }

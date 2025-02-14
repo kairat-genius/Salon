@@ -7,7 +7,8 @@ export const Map = () => {
     const src = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&t=m&z=${zoom}&output=embed`;
 
     return (
-        <div className="map">
+        <div id="contact" className="map" >
+            <Contact />
             <iframe
                 src={src}
                 loading="lazy"
@@ -19,7 +20,6 @@ export const Map = () => {
                 title={address}
                 aria-label={address}
             ></iframe>
-            <Contact />
         </div>
     );
 };

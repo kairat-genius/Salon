@@ -28,3 +28,64 @@
     font-size: 36px;
     line-height: 140%;
 }
+
+@media (max-width: 1300px) {
+
+    .service-card__image {
+        width: 400px;
+        height: 250px;
+    }
+
+    .service-card__description {
+        font-size: 22px;
+    }
+    .service-card__price {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-card__image {
+        width: 100%;
+    }
+
+    .service-card__description {
+        font-size: 18px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .service-card__price {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .service-card__image {
+        width: 100%;
+        height: 100%;
+        max-height: 200px;
+    }
+
+    .service-card__content {
+        gap: 5px;
+        width: 100%;
+    }
+
+    .service-card__description {
+        font-size: 16px;
+        max-width: 728px;
+    }
+
+    .service-card__price {
+        font-size: 22px;
+    }
+
+}

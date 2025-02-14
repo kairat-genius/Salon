@@ -31,7 +31,7 @@ table {
 }
 
 
-.service-pricing-body tr td{
+.service-name, .service-description, .service-price, .service-discount, .service-duration{
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-size: 28px;
@@ -41,4 +41,129 @@ table {
 }
 .service-pricing-body tr td:first-child {
     text-align: left;
+}
+
+.service-row-mobile {
+    display: none;
+}
+
+@media (max-width: 1650px) {
+
+    .service-pricing-header tr th{
+        font-size: 28px;
+    }
+
+    .service-name, .service-description, .service-price, .service-discount, .service-duration{
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 1650px) {
+
+    .service-pricing-header tr th{
+        font-size: 24px;
+    }
+
+    .service-name, .service-description, .service-price, .service-discount, .service-duration{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .service-pricing-header tr th{
+        font-size: 18px;
+    }
+
+    .service-name, .service-description, .service-price, .service-discount, .service-duration{
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
+    .service-pricing-header tr th{
+        font-size: 16px;
+    }
+
+    .service-name, .service-description, .service-price, .service-discount, .service-duration{
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .service-pricing-header, .service-row-desktop {
+        display: none;
+    }
+
+
+    .service-name,
+    .service-description {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .service-price,
+    .service-discount {
+        display: inline-block;
+    }
+
+    .service-duration {
+        white-space: nowrap;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .service-pricing-body tr td {
+        text-align: left;
+    }
+
+    .service-name {
+        font-size: 18px;
+        text-align: left;
+    }
+    .service-description {
+        font-size: 16px;
+        color: #A1A1A1;
+        text-align: left;
+    }
+
+    .service-price, .service-duration {
+        font-size: 18px;
+    }
+
+    .service-discount {
+        font-size: 14px;
+        color: #A1A1A1;
+    }
+
+
+    .service-row-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .service-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-price-wrapper {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        white-space: nowrap;
+    }
+
 }

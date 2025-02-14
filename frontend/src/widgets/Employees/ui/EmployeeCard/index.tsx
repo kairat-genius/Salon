@@ -1,27 +1,21 @@
 import "./EmployeeCard.css"
 import Image from "next/image";
+import {StaffType} from "@/interface";
 
-export const EmployeeCard = () => {
+interface EmployeeCardProps {
+    employee: StaffType;
+}
+
+export const EmployeeCard: React.FC<EmployeeCardProps> = ({ employee }) => {
     return (
         <div className="employee-card">
-            <img className="employee-card__image" src="/img/employee/image0.png"/>
+            <Image className="employee-card__image" src={employee.photo} width={362} height={507} alt={`Сотрудник Mon Plaisir ${employee.name}`}/>
             <div className="employee-card__content">
                 <div className="employee-card__wrap">
-                    <div className="employee-card__name">Имя какого - то работника: ФИО</div>
-                    <div className="employee-card__text">Профессия сотрудника</div>
-                </div>
-                <div className="employee-card__wrap">
-                    <div className="employee-card__contact-item">
-                        <Image className="employee-card__icon" src="/img/employee/ic-outline-mail0.svg" width={20} height={20} alt=""/>
-                        <div className="employee-card__text">sotrudnik@gmail.com</div>
-                    </div>
-                    <div className="employee-card__contact-item">
-                        <Image className="employee-card__icon" src="/img/employee/call0.svg" width={20} height={20} alt=""/>
-                        <div className="employee-card__text">+996(555)55-55</div>
-                    </div>
+                    <div className="employee-card__name">{employee.name}</div>
+                    <div className="employee-card__text">{employee.specialization}</div>
                 </div>
             </div>
         </div>
-
     );
 };

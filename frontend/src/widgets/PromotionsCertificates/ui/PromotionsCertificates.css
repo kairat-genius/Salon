@@ -4,9 +4,10 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    height: 956px;
     max-width: 1770px;
     margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .promotions-content{
@@ -16,7 +17,6 @@
     position: relative;
     align-items: center;
 }
-
 
 .promotions-images{
     width: 711.56px;
@@ -53,5 +53,83 @@
     width: 593px;
     height: 424px;
     object-fit: cover;
+}
+
+@media (max-width: 1550px) {
+
+    .promotions-certificates {
+        gap: 40px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+
+    .promotions-content{
+        display: block;
+    }
+
+    .certificates-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .certificate-image {
+        order: 2;
+    }
+
+    .certificates-content .title-description {
+        order: 1;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .promotions-certificates {
+        gap: 40px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+
+    .promotions-content{
+        display: block;
+    }
+
+    .certificates-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .certificate-image {
+        order: 2;
+        width: 210px;
+        height: 210px;
+    }
+    .promotions-images{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .certificates-content .title-description {
+        order: 1;
+    }
+
+    .promotions-images .img1 {
+        width: 210px;
+        height: 163px;
+        align-self: flex-start;
+    }
+
+    .promotions-images .img2 {
+        width: 210px;
+        height: 108px;
+        align-self: flex-end;
+    }
 }
 

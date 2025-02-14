@@ -43,19 +43,7 @@
     font-weight: 700;
 }
 
-.employee-card__contact-item{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-    justify-content: flex-start;
-}
 
-.employee-card__icon {
-    width: 20px;
-    height: 20px;
-    overflow: visible;
-}
 .employee-card__text {
     color: var(--text-black);
     text-align: left;
@@ -64,4 +52,23 @@
     line-height: 160%;
     letter-spacing: 1px;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .employee-card__name {
+        font-size: 16px;
+    }
+    .employee-card__text {
+        font-size: 14px;
+    }
+
+    .employee-card__image {
+        height: 271px;
+        width: 192px;
+    }
+
+    .employee-card__content {
+        padding: 10px 4px;
+        gap: 20px;
+    }
 }

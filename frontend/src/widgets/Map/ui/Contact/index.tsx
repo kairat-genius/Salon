@@ -1,37 +1,35 @@
 import "./Contact.css";
+import {Button} from "@/shared/ui/Button";
+import Image from "next/image";
 
 export const Contact = () => {
     return (
-        <div className="frame-1597883387">
-            <div className="frame-1597883386">
-                <div className="frame-1597883385">
-                    <div className="frame-1597883384">
-                        <img className="image-2" src="/map/image-20.png"/>
-                        <div className="_1905">Улица 1905 г.</div>
+        <div className="contact-container">
+                <div className="contact-content">
+                    <div className="contact-location">
+                        <Image className="location-image" src="/map/image-20.png" width={80} height={80} alt="logo map"/>
+                        <div className="location-name">Улица 1905 г.</div>
                     </div>
-                    <div className="frame-1597883383">
-                        <div className="frame-1597883379">
-                            <div className="div">Адрес:</div>
-                            <div className="_16-2">Шмитовский проезд, д.16, стр.2</div>
+                    <div className="contact-info">
+                        <div className="contact-item">
+                            <div className="contact-label">Адрес:</div>
+                            <div className="contact-value">Шмитовский проезд, д.16, стр.2</div>
                         </div>
-                        <div className="frame-1597883380">
-                            <div className="div">График работы:</div>
-                            <div className="_9-00-21-00">Пн-Вс: 9:00-21:00</div>
+                        <div className="contact-item">
+                            <div className="contact-label">График работы:</div>
+                            <div className="contact-value">Пн-Вс: 9:00-21:00</div>
                         </div>
-                        <div className="frame-1597883381">
-                            <div className="div">Почта:</div>
-                            <div className="pochta-gmail-com">pochta@gmail.com</div>
+                        <div className="contact-item">
+                            <div className="contact-label">Почта:</div>
+                            <div className="contact-value">pochta@gmail.com</div>
                         </div>
-                        <div className="frame-1597883382">
-                            <div className="div">Телефоны:</div>
-                            <div className="_7-968-601-20-20">+7 968 601 20 20</div>
+                        <div className="contact-item">
+                            <div className="contact-label">Телефоны:</div>
+                            <div className="contact-value">+7 968 601 20 20</div>
                         </div>
                     </div>
                 </div>
-                <div className="frame-1">
-                    <div className="div2">Записаться онлайн</div>
-                </div>
-            </div>
+                <Button/>
         </div>
 
     );

@@ -17,3 +17,21 @@
     font-size: 48px;
     font-weight: 600;
 }
+
+
+
+@media (max-width: 768px) {
+    .title-price-list {
+        gap: 20px;
+    }
+
+    .title-price-list__text {
+        font-size: 28px;
+    }
+
+    .title-price-list__decor {
+        width: 10px;
+        height: 10px;
+    }
+
+}

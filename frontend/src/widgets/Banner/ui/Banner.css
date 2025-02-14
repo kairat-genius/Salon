@@ -1,9 +1,8 @@
 .banner {
-    background: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(0, 0, 0, 0.4) 100%
-    );
+    background-image: url('/banner/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 12px;
     padding: 20px 0;
     display: flex;
@@ -20,12 +19,15 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
 }
+
 .banner-title-wrapper {
-  display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .banner-title {
     color: #ffffff;
     text-align: left;
@@ -35,6 +37,7 @@
     font-weight: 600;
     display: flex;
 }
+
 .title-divider {
     margin-top: -1px;
     border-style: solid;
@@ -42,8 +45,9 @@
     border-width: 1px 0 0 0;
     flex-shrink: 0;
     width: 370px;
-    height: 0px;
+    height: 0;
 }
+
 .banner-logo {
     display: flex;
     flex-direction: row;
@@ -52,8 +56,8 @@
     flex-shrink: 0;
     gap: 36px;
     height: 93px;
-
 }
+
 .logo-text {
     color: #ffffff;
     font-family: "Citadel Script", sans-serif;
@@ -65,6 +69,7 @@
     display: flex;
     align-items: center;
 }
+
 .logo-name {
     margin: 0 0 0 -74px;
     color: #ffffff;
@@ -75,10 +80,73 @@
     transform-origin: 0 0;
     transform: rotate(-15deg) scale(1, 1);
 }
+
 .banner-description {
     color: #ffffff;
     font-family: "MuseoModerno", sans-serif;
     font-size: 32px;
     line-height: 140%;
     font-weight: 500;
+    text-align: center;
+}
+
+
+@media (max-width: 850px) {
+    .banner-description {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        background-image: url('/banner/background-mobile.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 750px;
+        flex-shrink: 0;
+        align-self: stretch;
+        padding: 75px 0;
+    }
+
+    .banner-content {
+        gap: 20px;
+    }
+
+    .banner-title-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .banner-description {
+        font-size: 16px;
+        color: #3e1e26;
+    }
+
+    .banner-logo {
+        gap: 58px;
+        height: 49px;
+    }
+
+    .logo-text {
+        font-size: 35px;
+        color: #3e1e26;
+    }
+
+    .logo-name {
+        font-size: 35px;
+        color: #3e1e26;
+
+    }
+
+    .banner-title {
+        font-size: 25px;
+        color: #3e1e26;
+    }
+
+    .title-divider {
+        border-color: #865946;
+        width: 100%;
+    }
 }

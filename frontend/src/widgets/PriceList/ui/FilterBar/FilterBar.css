@@ -1,9 +1,5 @@
 
 
-.filter-bar {
-
-}
-
 .filter-item {
     border-style: solid;
     border-color: var(--button-purple);
@@ -13,6 +9,7 @@
     align-items: center;
     justify-content: center;
     width: 327px;
+    cursor: pointer;
 }
 
 .filter-text {
@@ -40,3 +37,25 @@
 .filter-item.active .filter-text {
     font-weight: 600;
 }
+
+@media (max-width: 1500px) {
+
+    .filter-item {
+        padding: 15px 30px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .filter-text {
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .filter-bar {
+        display: none;
+    }
+
+}
+

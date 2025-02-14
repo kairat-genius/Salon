@@ -6,6 +6,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    z-index: 101;
 }
 
 .logo {
@@ -22,4 +23,95 @@ header {
     gap: 40px;
 }
 
+.burger-menu {
+    display: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
 
+@media (max-width: 1800px) {
+    header {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .logo {
+        width: 200px;
+        height: 60px;
+        object-fit: cover;
+    }
+
+    .header-wrapper {
+        gap: 40px;
+    }
+
+    .header-actions {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 1220px) {
+    .header-wrapper {
+        position: absolute;
+        background: #ffffff;
+        z-index: 100;
+        width: 100%;
+        top: 54px;
+        left: 0;
+        right: 0;
+        display: none!important;
+        height: 100vh;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    header {
+        padding: 12px 20px;
+    }
+
+    .header-wrapper {
+        gap: 30px;
+    }
+
+    .logo {
+        width: 102px;
+        height: 30px;
+    }
+
+    .header-wrapper.active {
+        display: flex!important;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: normal;
+        overflow: hidden;
+
+    }
+
+    .header-wrapper.active .navbar {
+        align-items: flex-start;
+    }
+
+    .header-wrapper.active .header-actions {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: flex-start;
+
+    }
+
+    .header-wrapper.active .header-actions .social {
+        order: 2;
+    }
+
+    .header-wrapper.active .header-actions .button-container {
+        order: 1;
+        width: 100%;
+    }
+
+}

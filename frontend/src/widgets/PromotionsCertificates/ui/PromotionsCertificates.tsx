@@ -5,7 +5,7 @@ import Image from "next/image";
 export const PromotionsCertificates = () => {
   return (
       <div className="promotions-certificates">
-        <div className="promotions-content">
+        <div id="shares" className="promotions-content">
             <TitleDescription title="АКЦИИ">
                 На нашем сайте действуют выгодные акции! <br />
                 Успейте воспользоваться специальными предложениями и получите скидки на популярные товары. <br />
@@ -16,7 +16,7 @@ export const PromotionsCertificates = () => {
             <Image className="promotion-image img2" src="/pcerts/rectangle-90.png" width={300} height={370} alt="Акция 2"/>
           </div>
         </div>
-        <div className="certificates-content">
+        <div id="certificates" className="certificates-content" >
           <Image className="certificate-image" src="/pcerts/image0.png" width={593} height={424} alt="Подарочные сертификаты"/>
             <TitleDescription title="Подарочные сертификаты">
                 В нашем салоне любую услугу или комплекс услуг можно приобрести в виде подарочного сертификата, чтобы порадовать близкого человека.
