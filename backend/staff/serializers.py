@@ -1,10 +1,13 @@
+from datetime import datetime
+
 from rest_framework import serializers
 
 from staff.models import Staff
 
 
 class StaffSerializer(serializers.ModelSerializer):
-    photo = serializers.ImageField(use_url=True)
+    photo = serializers.ImageField(use_url = True)
+    experience = serializers.SerializerMethodField()
 
     class Meta:
         model = Staff
@@ -15,5 +18,11 @@ class StaffSerializer(serializers.ModelSerializer):
             'surname',
             'patronymic',
             'specialization',
-            'photo'
+            'photo',
+            'experience'
         ]
+
+    def get_experience(self, obj):
+        current_year = datetime.now().year
+        experience = current_year - obj.career_start_year
+        return experience

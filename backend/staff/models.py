@@ -32,3 +32,4 @@ class Staff(models.Model):
         null=True,
         blank=True
     )
+    career_start_year = models.IntegerField(verbose_name = 'Год начала карьеры')
