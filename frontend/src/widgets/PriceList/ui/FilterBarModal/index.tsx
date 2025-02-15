@@ -57,7 +57,7 @@ export const FilterBarModal: React.FC<FilterBarProps> = ({ category, onCategoryS
                              key={cat.id}
                              onClick={() => handleCategoryClick(cat)}
                         >
-                            <div className="filter-text-modal">{cat.title}</div>
+                            <div className="filter-text-modal">{cat?.title}</div>
                         </div>
                             ))}
                     </div>

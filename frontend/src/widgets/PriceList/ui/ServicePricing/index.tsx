@@ -11,7 +11,7 @@ export const ServicePricing: React.FC<ServiceCardProps> = ({selectedCategory}) =
         <table>
             <thead className="service-pricing-header">
             <tr>
-                <th className="service-title">{selectedCategory.title}</th>
+                <th className="service-title">{selectedCategory?.title}</th>
                 <th>Описание</th>
                 <th>От - До</th>
                 <th>Скидочная цена</th>

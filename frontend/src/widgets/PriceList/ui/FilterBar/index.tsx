@@ -15,13 +15,13 @@ export const FilterBar: React.FC<FilterBarProps> = ({ category, onCategorySelect
 
     return (
         <div className="filter-bar">
-            {category.map((cat) => (
+            {category?.map((cat) => (
                 <div
                     className={`filter-item ${selectedCategory?.id === cat.id ? "active" : ""}`}
                     key={cat.id}
                     onClick={() => handleCategoryClick(cat)}
                 >
-                    <div className="filter-text">{cat.title}</div>
+                    <div className="filter-text">{cat?.title}</div>
                 </div>
             ))}
         </div>
