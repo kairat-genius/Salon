@@ -24,7 +24,7 @@ export const Contact = () => {
                             <div className="contact-value">Studiomonplaisir@mail.ru</div>
                         </div>
                         <div className="contact-item">
-                            <div className="contact-label">Телефоны:</div>
+                            <div className="contact-label">Телефон:</div>
                             <div className="contact-value">+7 (495) 605-56-50</div>
                         </div>
                     </div>

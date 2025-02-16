@@ -1,4 +1,4 @@
-const API_DOMAIN = "http://localhost:8000";
+const API_DOMAIN = "http://backend:8000";
 const API_PREFIX = "/api/";
 
 const API_URL = API_DOMAIN + API_PREFIX;
