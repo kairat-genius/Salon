@@ -25,7 +25,10 @@ class ServiceSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.ModelSerializer):
     services = ServiceSerializer(many=True, read_only=True)
     sales = SaleSerializer(many=False, read_only=True)
+    sale_photo = serializers.SerializerMethodField()
 
+    def get_sale_photo(self, obj):
+        return obj.sale_photo.url
     class Meta:
         model = Category
         fields = '__all__'

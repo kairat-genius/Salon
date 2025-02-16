@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-# DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     # '127.0.0.1',
@@ -142,5 +142,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost',
-     'http://nextjs:3000',
+    'http://nextjs:3000',
 ]

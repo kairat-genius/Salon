@@ -6,7 +6,7 @@ from staff.models import Staff
 
 
 class StaffSerializer(serializers.ModelSerializer):
-    photo = serializers.ImageField(use_url = True)
+    photo = serializers.SerializerMethodField()
     experience = serializers.SerializerMethodField()
 
     class Meta:
@@ -22,6 +22,8 @@ class StaffSerializer(serializers.ModelSerializer):
             'experience'
         ]
 
+    def get_photo(self, obj):
+        return obj.photo.url
     def get_experience(self, obj):
         current_year = datetime.now().year
         experience = current_year - obj.career_start_year
