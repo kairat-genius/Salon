@@ -13,10 +13,12 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+RUN apt-get update && apt-get install -y dos2unix
+
 WORKDIR /app
 COPY . /app
 
-COPY init.sh /app/init.sh
+RUN dos2unix /app/init.sh
 RUN chmod +x /app/init.sh
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
