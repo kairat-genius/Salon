@@ -1,4 +1,4 @@
-
+export const dynamic = 'force-dynamic';
 import { Banner } from "@/widgets/Banner";
 import { Employees } from "@/widgets/Employees";
 import { Interior } from "@/widgets/Interior";
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 export default async function Home() {
   const category = await getCategory();
   const staff = await getStaff()
+  
   return (
     <>
     <Banner/>

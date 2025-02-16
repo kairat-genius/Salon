@@ -1,7 +1,6 @@
 "use client"
 import "./Interior.css"
 import {Title} from "@/shared/ui/Title";
-
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";

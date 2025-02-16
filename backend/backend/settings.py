@@ -13,10 +13,18 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    '0.0.0.0',
+    # '127.0.0.1',
+    # 'localhost',
+    # '0.0.0.0',
     '*', 
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+    'http://localhost',
+    'http://127.0.0.1',
+    'http://nextjs:3000',
 ]
 
 INSTALLED_APPS = [
@@ -69,23 +77,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'db_news',
-#         'USER': 'db_user',
-#         'PASSWORD': 'db_pass',
-#         'HOST': 'db',
-#         'PORT': 5432,
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db_news',
+        'USER': 'db_user',
+        'PASSWORD': 'db_pass',
+        'HOST': 'db',
+        'PORT': 5432,
     }
-}
+}    
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -139,4 +147,5 @@ CRONJOBS = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost',
+     'http://nextjs:3000',
 ]
