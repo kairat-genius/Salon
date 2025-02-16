@@ -1,5 +1,4 @@
 "use client"
-
 import "./Interior.css"
 import {Title} from "@/shared/ui/Title";
 
@@ -16,6 +15,7 @@ export const Interior = () => {
     return (
         <div id="about" className="interior">
             <Title>Интерьер</Title>
+            
             <div className="interior-list">
                 <Swiper
                     effect={'coverflow'}

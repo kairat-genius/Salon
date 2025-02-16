@@ -30,6 +30,7 @@ export interface StaffType {
     patronymic: string;
     specialization: string;
     photo: string;
+    experience: number;
 }
 
 export interface CategoryListType {

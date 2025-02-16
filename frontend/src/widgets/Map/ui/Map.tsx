@@ -2,21 +2,18 @@ import "./Map.css";
 import { Contact } from "@/widgets/Map/ui/Contact";
 
 export const Map = () => {
-    const zoom = 16;
-    const address = "Шмитовский пр-д, 16 строение 2, Москва, Россия, 123100";
-    const src = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&t=m&z=${zoom}&output=embed`;
-
+    const address = "улица Сергея Макеева, 1, Москва, 123100";
+    
     return (
-        <div id="contact" className="map" >
+        <div id="contact" className="map">
             <Contact />
             <iframe
-                src={src}
-                loading="lazy"
-                style={{
-                    width: "100%",
-                    height: "100%",
-                    border: 0,
-                }}
+                src="https://yandex.com/map-widget/v1/org/mon_plezir/1018167095/?ll=37.549935%2C55.756529&utm_source=share&z=20"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                allowFullScreen={true}
+                style={{ border: 0, display: "block" }}
                 title={address}
                 aria-label={address}
             ></iframe>

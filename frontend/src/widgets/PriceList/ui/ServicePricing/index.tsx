@@ -1,6 +1,6 @@
 import "./ServicePricing.css";
 import {CategoryType, ServiceType} from "@/interface";
-import {formatDuration} from "@/shared/utils/formatDuration";
+import {formatDuration} from "@/shared/utils/formatters";
 
 interface ServiceCardProps {
     selectedCategory: CategoryType;

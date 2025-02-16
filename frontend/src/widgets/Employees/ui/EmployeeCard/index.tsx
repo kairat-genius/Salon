@@ -1,6 +1,7 @@
 import "./EmployeeCard.css"
 import Image from "next/image";
 import {StaffType} from "@/interface";
+import { formatExperience } from "@/shared/utils/formatters";
 
 interface EmployeeCardProps {
     employee: StaffType;
@@ -14,6 +15,7 @@ export const EmployeeCard: React.FC<EmployeeCardProps> = ({ employee }) => {
                 <div className="employee-card__wrap">
                     <div className="employee-card__name">{employee.name}</div>
                     <div className="employee-card__text">{employee.specialization}</div>
+                    <div className="employee-card__text">Стаж:&nbsp;{formatExperience(employee.experience)}</div>
                 </div>
             </div>
         </div>

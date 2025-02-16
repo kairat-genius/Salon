@@ -35,6 +35,7 @@ services:
       - media_volume:/app/media
     depends_on:
       - backend
+      - nextjs
 
   nextjs:
     build:

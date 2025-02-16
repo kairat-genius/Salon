@@ -7,11 +7,23 @@ export async function getStaff() {
         "Content-Type": "application/json",
     };
 
-    const response = await fetch(url, {
-        method: "GET",
-        headers: headers,
-    });
-
-    const data: StaffType[] = await response.json();
-    return data;
+    try {
+            const response = await fetch(url, {
+                method: "GET",
+                headers: headers,
+            });
+    
+            if (!response.ok) {
+                console.error("Failed to fetch category data:", response.statusText);
+                return []; 
+            }
+    
+            const data: StaffType[] = await response.json();
+            return data;
+    
+        } catch (error) {
+            console.error("Error fetching category data:", error);
+            return []; 
+        }
 }
+
