@@ -65,6 +65,38 @@
     line-height: 160%;
 }
 
+@media (max-width: 768px) {
+
+    .contact-container {
+        top: auto;
+        left: auto;
+        transform: none;
+        gap: 10px;
+        padding: 0 0 20px;
+    }
+
+    .contact-content {
+        gap: 10px;
+    }
+
+    .location-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .location-name {
+        font-size: 16px;
+    }
+
+    .contact-label {
+        font-size: 15px;
+    }
+    .contact-value {
+        font-size: 14px;
+    }
+
+
+}
 
 @media (max-width: 768px) {
 

@@ -10,7 +10,7 @@ interface EmployeeCardProps {
 export const EmployeeCard: React.FC<EmployeeCardProps> = ({ employee }) => {
     return (
         <div className="employee-card">
-            <Image className="employee-card__image" src={employee.photo} width={362} height={507} alt={`Сотрудник Mon Plaisir ${employee.name}`}/>
+            <Image className="employee-card__image" src={`${process.env.NEXT_PUBLIC_API_URL}${employee.photo}`} width={362} height={507} alt={`Сотрудник Mon Plaisir ${employee.name}`}/>
             <div className="employee-card__content">
                 <div className="employee-card__wrap">
                     <div className="employee-card__name">{employee.name}</div>
