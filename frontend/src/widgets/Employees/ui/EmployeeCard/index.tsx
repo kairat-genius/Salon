@@ -1,4 +1,5 @@
 import "./EmployeeCard.css"
+import {FC} from "react";
 import Image from "next/image";
 import {StaffType} from "@/interface";
 import { formatExperience } from "@/shared/utils/formatters";
@@ -7,7 +8,7 @@ interface EmployeeCardProps {
     employee: StaffType;
 }
 
-export const EmployeeCard: React.FC<EmployeeCardProps> = ({ employee }) => {
+export const EmployeeCard: FC<EmployeeCardProps> = ({ employee }) => {
     return (
         <div className="employee-card">
             <Image className="employee-card__image" src={`${process.env.NEXT_PUBLIC_API_URL}${employee.photo}`} width={362} height={507} alt={`Сотрудник Mon Plaisir ${employee.name}`}/>

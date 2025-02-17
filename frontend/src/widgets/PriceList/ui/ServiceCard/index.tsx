@@ -1,12 +1,13 @@
 import "./ServiceCard.css";
 import Image from "next/image";
 import {CategoryType} from "@/interface";
+import {FC} from "react";
 
 interface ServiceCardProps {
     selectedCategory: CategoryType;
 }
 
-export const ServiceCard: React.FC<ServiceCardProps> = ({selectedCategory}) => {
+export const ServiceCard: FC<ServiceCardProps> = ({selectedCategory}) => {
     return (
                     <div className="service-card">
                         <Image className="service-card__image" src={`${process.env.NEXT_PUBLIC_API_URL}${selectedCategory?.sale_photo}`} alt={selectedCategory?.title} width={500} height={300}/>

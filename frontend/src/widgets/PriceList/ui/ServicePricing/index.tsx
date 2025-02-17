@@ -1,4 +1,5 @@
 import "./ServicePricing.css";
+import {FC} from "react";
 import {CategoryType, ServiceType} from "@/interface";
 import {formatDuration} from "@/shared/utils/formatters";
 
@@ -6,7 +7,7 @@ interface ServiceCardProps {
     selectedCategory: CategoryType;
 }
 
-export const ServicePricing: React.FC<ServiceCardProps> = ({selectedCategory}) => {
+export const ServicePricing: FC<ServiceCardProps> = ({selectedCategory}) => {
     return (
         <table>
             <thead className="service-pricing-header">

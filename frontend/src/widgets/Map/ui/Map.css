@@ -1,8 +1,7 @@
 .map {
     max-width: 1760px;
     height: 800px;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
     position: relative;
 }
 

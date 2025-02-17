@@ -1,4 +1,5 @@
 'use client'
+import {FC} from "react";
 import "./Employees.css"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,7 +15,7 @@ interface EmployeesProps {
     staff: StaffType[];
 }
 
-export const Employees: React.FC<EmployeesProps> = ({ staff }) => {
+export const Employees: FC<EmployeesProps> = ({ staff }) => {
   return (
       <div className="employees">
         <Title>Сотрудники</Title>
