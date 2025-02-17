@@ -47,9 +47,39 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+    .interior {
+        margin: 10px;
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .interior .swiper-slide {
+        width: 204px;
+        height: 168px;
+        border-radius: 20px;
+    }
+    .interior .swiper-slide .interior-img{
+        border-radius: 20px;
+    }
+    .interior .swiper-slide-active{
+        width: 204px;
+        height: 202px;
+    }
+
+    .interior .swiper-slide-active .interior-img{
+        width: 204px;
+        height: 202px;
+    }
+
+}
 
 
+@media (max-width: 500px) {
     .interior {
         margin: 10px;
         margin-bottom: 40px;

@@ -1,5 +1,5 @@
 .button-container {
-  background: #782f61;
+  background: #3e1e26;;
   border-radius: 12px;
   padding: 20px;
   display: flex;
@@ -18,7 +18,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .button-container {
     padding: 15px 20px;
   }

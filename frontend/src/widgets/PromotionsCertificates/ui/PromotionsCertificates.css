@@ -13,18 +13,18 @@
 .promotions-content{
     display: flex;
     flex-direction: row;
-    gap: 66px;
     position: relative;
     align-items: center;
+    justify-content: space-between;
 }
 
 .promotions-images{
-    width: 711.56px;
+    width: 711px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
 .promotions-images .promotion-image {
     border-radius: 12px;
     transform-origin: 0 0;
@@ -47,6 +47,7 @@
     flex-direction: row;
     gap: 100px;
     align-items: center;
+
 }
 .certificate-image {
     border-radius: 12px;

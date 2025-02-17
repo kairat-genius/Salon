@@ -54,6 +54,7 @@
     font-weight: 500;
 }
 
+
 @media (max-width: 768px) {
     .employee-card__name {
         font-size: 16px;
@@ -63,8 +64,8 @@
     }
 
     .employee-card__image {
-        height: 271px;
-        width: 192px;
+        height: 300px;
+        width: 220px;
     }
 
     .employee-card__content {

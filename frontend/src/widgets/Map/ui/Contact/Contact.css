@@ -65,37 +65,46 @@
     line-height: 160%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
 
     .contact-container {
-        top: auto;
-        left: auto;
-        transform: none;
-        gap: 10px;
-        padding: 0 0 20px;
+        gap: 20px;
+        padding: 20px;
     }
+
 
     .contact-content {
         gap: 10px;
     }
 
     .location-image {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
     .location-name {
-        font-size: 16px;
+        font-size: 20px;
     }
 
-    .contact-label {
-        font-size: 15px;
+    .contact-item{
+        font-size: 18px;
     }
-    .contact-value {
-        font-size: 14px;
+
+    .contact-container .button-container {
+        padding: 10px;
+    }
+    .contact-container .button-container .button-text{
+        font-size: 18px;
     }
 
 
+}
+
+@media (max-width: 1200px) {
+    .contact-container {
+        transform: none;
+        top: 55%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -107,6 +116,7 @@
         transform: none;
         gap: 10px;
         padding: 0 0 20px;
+        max-width: 100%;
     }
 
     .contact-content {

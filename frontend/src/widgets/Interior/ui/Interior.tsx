@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import 'swiper/css/effect-coverflow';
 import {Navigation, EffectCoverflow} from "swiper/modules";
 import Image from "next/image";
-import {Arrow} from "@/widgets/Interior/ui/Arrow";
+import {Arrow} from "@/shared/ui/Arrow";
 
 export const Interior = () => {
 
@@ -24,8 +24,8 @@ export const Interior = () => {
                     modules={[Navigation, EffectCoverflow]}
                     slidesPerView={3}
                     navigation={{
-                        prevEl: ".swiper-button-prev",
-                        nextEl: ".swiper-button-next",
+                        prevEl: ".interior-prev",
+                        nextEl: ".interior-next",
                     }}
                     grabCursor={true}
                     breakpoints={{
@@ -74,8 +74,8 @@ export const Interior = () => {
                     </SwiperSlide>
                     ))}
                 </Swiper>
-                <Arrow styleClass="swiper-button-prev"/>
-                <Arrow styleClass="swiper-button-next"/>
+                <Arrow styleClass="swiper-button-prev interior-prev"/>
+                <Arrow styleClass="swiper-button-next interior-next"/>
             </div>
         </div>
     );
