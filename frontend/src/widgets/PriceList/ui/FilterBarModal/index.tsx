@@ -3,11 +3,8 @@ import React, {useState} from "react";
 import "./FilterBarModal.css";
 import Image from "next/image";
 import {TitlePriceList} from "@/widgets/PriceList/ui/TitlePriceList";
-
-
-
 import { CategoryListType, CategoryType } from "@/interface";
-import {Logo} from "@/shared/ui/Logo";
+
 
 interface FilterBarProps extends CategoryListType {
     onCategorySelectAction: (category: CategoryType) => void;
