@@ -7,7 +7,7 @@ export const Contact = () => {
         <div className="contact-container">
                 <div className="contact-content">
                     <div className="contact-location">
-                        <Image className="location-image" src="/map/image-20.png" width={80} height={80} alt="logo map"/>
+                        <Image className="location-image" src="/img/map/logo.png" width={80} height={80} alt="logo map"/>
                         <div className="location-name">Метро Улица 1905 года</div>
                     </div>
                     <div className="contact-info">

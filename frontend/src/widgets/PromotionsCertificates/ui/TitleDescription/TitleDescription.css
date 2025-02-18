@@ -1,6 +1,6 @@
 
 .title-description {
-    background: linear-gradient(to left, #3e1e26, #3e1e26);
+    background: var(--global-color);
     border-radius: 12px;
     padding: 60px 80px;
     display: flex;

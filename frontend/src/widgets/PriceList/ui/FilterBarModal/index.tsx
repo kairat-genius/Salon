@@ -7,6 +7,7 @@ import {TitlePriceList} from "@/widgets/PriceList/ui/TitlePriceList";
 
 
 import { CategoryListType, CategoryType } from "@/interface";
+import {Logo} from "@/shared/ui/Logo";
 
 interface FilterBarProps extends CategoryListType {
     onCategorySelectAction: (category: CategoryType) => void;
@@ -46,7 +47,6 @@ export const FilterBarModal: React.FC<FilterBarProps> = ({ category, onCategoryS
                 <div className="filter-modal" onClick={(e) => e.stopPropagation()}>
                     <div className="modal__content">
                         <div className="modal__header">
-                            <Image className="modal__image-logo" src="/logo.png" width={85} height={25} alt="Логотип модал"/>
                             <Image className="modal__close-icon" src="/img/icons-controls/closing.svg" width={25} height={25} alt="Закрытие модаль"  onClick={toggleModal}/>
                         </div>
                         <TitlePriceList/>

@@ -1,0 +1,56 @@
+.logo {
+    color: var(--global-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    font-size: 90px;
+    font-family: "Citadel Script", sans-serif;
+    font-weight: 400;
+    width: 304px;
+    height: 90px;
+}
+
+.logo.logo-banner {
+    color: #ffffff;
+}
+
+.logo-text-head {
+    line-height: 140%;
+    transform: rotate(-15deg) scale(1, 1);
+    display: flex;
+    align-items: center;
+}
+
+.logo-name-head {
+    margin: 0 0 0 -42px;
+    line-height: 140%;
+    transform: rotate(-15deg) scale(1, 1);
+}
+
+@media (max-width: 1300px) {
+    .logo:not(.logo-banner) {
+        font-size: 35px;
+        width: 124px;
+        height: 49px;
+    }
+
+    .logo:not(.logo-banner) .logo-name-head {
+        margin: 0 0 0 -20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo.logo-banner {
+        font-size: 35px;
+        width: 124px;
+        height: 49px;
+        color: var(--global-color);
+    }
+
+    .logo.logo-banner .logo-name-head {
+        margin: 0 0 0 -20px;
+    }
+}
+

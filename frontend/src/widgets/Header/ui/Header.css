@@ -9,12 +9,6 @@ header {
     z-index: 101;
 }
 
-.logo {
-    width: 304px;
-    height: 90px;
-    object-fit: cover;
-}
-
 .header-wrapper {
     gap: 80px;
 }
@@ -30,6 +24,7 @@ header {
     cursor: pointer;
 }
 
+
 @media (max-width: 1800px) {
     header {
         padding: 20px 20px;
@@ -40,7 +35,6 @@ header {
     .logo {
         width: 200px;
         height: 60px;
-        object-fit: cover;
     }
 
     .header-wrapper {
@@ -59,7 +53,7 @@ header {
         background: #ffffff;
         z-index: 100;
         width: 100%;
-        top: 54px;
+        top: 73px;
         left: 0;
         right: 0;
         display: none!important;
@@ -115,3 +109,5 @@ header {
     }
 
 }
+
+

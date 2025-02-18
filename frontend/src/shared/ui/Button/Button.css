@@ -1,5 +1,5 @@
 .button-container {
-  background: #3e1e26;;
+  background: var(--global-color);
   border-radius: 12px;
   padding: 20px;
   display: flex;

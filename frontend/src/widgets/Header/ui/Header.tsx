@@ -5,6 +5,7 @@ import {Social} from "./Social";
 import "./Header.css"
 import {Navbar} from "@/widgets/Header/ui/Navbar";
 import Image from "next/image";
+import {Logo} from "@/shared/ui/Logo";
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export const Header = () => {
 
     return (
         <header>
-            <Image className="logo" height={90} width={304} alt="logo" src="/logo.png"/>
+            <Logo/>
             <div className={`header-wrapper ${isMenuOpen ? 'active' : ''} flex-row`}>
                 <Navbar/>
                 <div className="header-actions flex-row">

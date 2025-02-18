@@ -1,4 +1,6 @@
 import "./Banner.css"
+import {Logo} from "@/shared/ui/Logo";
+import React from "react";
 
 export const Banner = () => {
     return (
@@ -8,10 +10,7 @@ export const Banner = () => {
                     <span className="banner-title">Студия красоты</span>
                     <div className="title-divider"></div>
                 </div>
-                <div className="banner-logo">
-                    <span className="logo-text">Mon</span>
-                    <span className="logo-name">Plaisir</span>
-                </div>
+                <Logo banner={true}/>
             </div>
             <p className="banner-description">25 лет профессионально заботимся о Вашей красоте</p>
         </div>
