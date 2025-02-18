@@ -10,7 +10,7 @@ interface ServiceCardProps {
 export const ServiceCard: FC<ServiceCardProps> = ({selectedCategory}) => {
     return (
                     <div className="service-card">
-                        <Image className="service-card__image" src={`${process.env.NEXT_PUBLIC_API_URL}${selectedCategory?.sale_photo}`} alt={selectedCategory?.title} width={500} height={300}/>
+                        {selectedCategory?.sale_photo && ( <Image className="service-card__image" src={`${process.env.NEXT_PUBLIC_API_URL}${selectedCategory?.sale_photo}`} alt={selectedCategory?.title} width={500} height={300}/> )}
                         {selectedCategory?.sales && (
                         <div className="service-card__content">
                             <div className="service-card__description">

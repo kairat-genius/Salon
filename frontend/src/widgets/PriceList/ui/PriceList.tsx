@@ -24,7 +24,7 @@ export const PriceList: React.FC<CategoryListType> = ({category}) => {
               <FilterBar category={category} onCategorySelect={handleCategorySelect} selectedCategory={selectedCategory}/>
 
             <div className="price-list__services">
-                <ServiceCard selectedCategory={selectedCategory} />
+           <ServiceCard selectedCategory={selectedCategory} />
                 <FilterBarModal category={category} onCategorySelectAction={handleCategorySelect} selectedCategory={selectedCategory}/>
                 <ServicePricing selectedCategory={selectedCategory} />
             </div>

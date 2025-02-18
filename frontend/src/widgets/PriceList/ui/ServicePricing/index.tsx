@@ -14,7 +14,7 @@ export const ServicePricing: FC<ServiceCardProps> = ({selectedCategory}) => {
             <tr>
                 <th className="service-title">{selectedCategory?.title}</th>
                 <th>Описание</th>
-                <th>От - До</th>
+                <th>Цена</th>
                 <th>Скидочная цена</th>
                 <th>Длительность услуги</th>
             </tr>
