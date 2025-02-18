@@ -23,7 +23,11 @@ class StaffSerializer(serializers.ModelSerializer):
         ]
 
     def get_photo(self, obj):
-        return obj.photo.url
+        # Проверяем, есть ли фото у объекта
+        if obj.photo:
+            return obj.photo.url
+        # Если фото нет, возвращаем None
+        return None
     def get_experience(self, obj):
         current_year = datetime.now().year
         experience = current_year - obj.career_start_year

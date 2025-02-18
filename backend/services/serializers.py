@@ -2,11 +2,12 @@ from rest_framework import serializers
 
 from services.models import Category, Service, Sale
 
-class SaleSerializer(serializers.ModelSerializer):
 
+class SaleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sale
         fields = '__all__'
+
 
 class CategoryNestedSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,7 +16,7 @@ class CategoryNestedSerializer(serializers.ModelSerializer):
 
 
 class ServiceSerializer(serializers.ModelSerializer):
-    category = CategoryNestedSerializer(read_only=True)
+    category = CategoryNestedSerializer(read_only = True)
 
     class Meta:
         model = Service
@@ -23,12 +24,17 @@ class ServiceSerializer(serializers.ModelSerializer):
 
 
 class CategorySerializer(serializers.ModelSerializer):
-    services = ServiceSerializer(many=True, read_only=True)
-    sales = SaleSerializer(many=False, read_only=True)
+    services = ServiceSerializer(many = True, read_only = True)
+    sales = SaleSerializer(many = False, read_only = True)
     sale_photo = serializers.SerializerMethodField()
 
     def get_sale_photo(self, obj):
-        return obj.sale_photo.url
+        # Проверяем, есть ли фото у объекта
+        if obj.sale_photo:
+            return obj.sale_photo.url
+        # Если фото нет, возвращаем None
+        return None
+
     class Meta:
         model = Category
         fields = '__all__'
@@ -44,6 +50,3 @@ class ServiceForSaleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Service
         exclude = ['category']
-
-
-
